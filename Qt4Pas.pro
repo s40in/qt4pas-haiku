@@ -12,13 +12,13 @@
 
 VERSION = 5.2.5
 
-QT += network webkit
+QT += network 
 TARGET = Qt4Pas
 TEMPLATE = lib
 DEPENDPATH += src
 MOC_DIR = tmp
 OBJECTS_DIR = tmp
-QMAKE_CXXFLAGS += -mstackrealign -mincoming-stack-boundary=2 
+QMAKE_CXXFLAGS += -mincoming-stack-boundary=2 
 
 # Match Intel x86_64 i686 i586 i386 x86 ...
 is86 = $$find(QMAKE_HOST.arch, ".*86")
@@ -162,15 +162,8 @@ HEADERS +=  \
            qtcpsocket_hook.h \
            qtcpserver_hook.h \
            qnetworkaccessmanager_hook.h \
-           qnetworkreply_hook.h \
-           qwebframe_hook.h \
-           qwebsecurityorigin_hook.h \
-           qwebdatabase_hook.h \
-           qwebhistory_hook.h \
-           qwebhistoryinterface_hook.h \
-           qwebpage_hook.h \
-           qwebsettings_hook.h \
-           qwebview_hook.h
+           qnetworkreply_hook.h 
+
 
 SOURCES += qt4pas.cpp \
            qobject_hook_c.cpp \
@@ -352,16 +345,6 @@ SOURCES += qt4pas.cpp \
            qlclnetworkcookie_c.cpp \
            qnetworkproxy_c.cpp \
            qauthenticator_c.cpp \
-           qwebframe_c.cpp \
-           qwebsecurityorigin_c.cpp \
-           qwebdatabase_c.cpp \
-           qwebhistory_c.cpp \
-           qwebhistoryinterface_c.cpp \
-           qwebpage_c.cpp \
-           qlclwebpage_c.cpp \
-           qwebsettings_c.cpp \
-           qwebview_c.cpp \
-           qlclwebview_c.cpp \
            qcoreapplication_hook_c.cpp \
            qtimer_hook_c.cpp \
            qabstractitemmodel_hook_c.cpp \
@@ -441,14 +424,7 @@ SOURCES += qt4pas.cpp \
            qtcpsocket_hook_c.cpp \
            qtcpserver_hook_c.cpp \
            qnetworkaccessmanager_hook_c.cpp \
-           qnetworkreply_hook_c.cpp \
-           qwebframe_hook_c.cpp \
-           qwebsecurityorigin_hook_c.cpp \
-           qwebdatabase_hook_c.cpp \
-           qwebhistory_hook_c.cpp \
-           qwebhistoryinterface_hook_c.cpp \
-           qwebpage_hook_c.cpp \
-           qwebsettings_hook_c.cpp \
-           qwebview_hook_c.cpp
+           qnetworkreply_hook_c.cpp 
+
 
 # end of file
